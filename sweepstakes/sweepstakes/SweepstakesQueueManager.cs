@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace sweepstakes
 {
-    class Program
+    class SweepstakesQueueManager
     {
-        static void Main(string[] args)
-        {
-            
-
-        }
     }
 }
