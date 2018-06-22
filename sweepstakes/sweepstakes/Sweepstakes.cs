@@ -21,18 +21,19 @@ namespace sweepstakes
         //Properties
 
         //Member Methods
-        public void CreateContestant()
+        public Contestant CreateContestant()
         {
-
+            Contestant contestant = new Contestant();
+            contestant.GetFirstName();
+            contestant.GetLastName();
+            contestant.GetEmail();
+            contestant.GetRegistrationNumber();
+            return contestant;
         }
 
         public void RegisterContestant(Contestant contestant)
         {
-
-            int count = 1;
-            contestantDictionary.Add(count + 1, contestant);
-            Console.WriteLine(contestantDictionary);
-
+            contestantDictionary.Add(contestant.RegistrationNumber, contestant);
         }
 
         //public string PickWinner()
