@@ -8,5 +8,17 @@ namespace sweepstakes
 {
     class SweepstakesQueueManager
     {
+
+        //Member Variables
+
+        //Constructor
+        public SweepstakesQueueManager()
+        {
+
+        }
+
+        //Proprties
+
+        //Member Methods
     }
 }
