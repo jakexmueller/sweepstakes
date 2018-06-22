@@ -10,6 +10,7 @@ namespace sweepstakes
     {
 
         //Member Variables
+        private Dictionary<int, Contestant> contestantDictionary = new Dictionary<int, Contestant>();
 
         //Contructor
         public Sweepstakes(string stringName)
@@ -20,15 +21,24 @@ namespace sweepstakes
         //Properties
 
         //Member Methods
-        public void RegsiterContestant(Contestant contestant)
+        public void CreateContestant()
         {
 
         }
 
-        public string PickWinner()
+        public void RegisterContestant(Contestant contestant)
         {
 
+            int count = 1;
+            contestantDictionary.Add(count + 1, contestant);
+            Console.WriteLine(contestantDictionary);
+
         }
+
+        //public string PickWinner()
+        //{
+
+        //}
 
         public void PrintContestantInfo(Contestant contestant)
         {
