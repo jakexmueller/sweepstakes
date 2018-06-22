@@ -20,7 +20,6 @@ namespace sweepstakes
         //Properties
 
         //Member Methods
-        //public Sweepstakes(stringName)
         public void RegsiterContestant(Contestant contestant)
         {
 

@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace sweepstakes
 {
-    class SweepstakesQueueManager
+    class SweepstakesQueueManager: ISweepstakesManager
     {
 
         //Member Variables
 
-        //Constructor
-        public SweepstakesQueueManager()
+        Sweepstakes ISweepstakesManager.GetSweepstakes()
         {
-
+            throw new NotImplementedException();
         }
 
-        //Proprties
+        void ISweepstakesManager.InsertSweepstakes(Sweepstakes sweepstakes)
+        {
+            throw new NotImplementedException();
+        }
+
+        //Properties
 
         //Member Methods
     }
