@@ -13,7 +13,6 @@ namespace sweepstakes
         string firstName;
         string lastName;
         string eMailAddress;
-        int registrationNumber = 0;
 
         //Constructor
         public Contestant()
@@ -55,39 +54,25 @@ namespace sweepstakes
                 eMailAddress = value;
             }
         }
-        public int RegistrationNumber
-        {
-            get
-            {
-                return registrationNumber;
-            }
-            set
-            {
-                registrationNumber = value;
-            }
-        }
+
 
         //Member Methods
 
-        public void GetFirstName()
+        public void SetFirstName()
         {
             Console.WriteLine("What is your first name?");
-            FirstName = Console.ReadLine();
+            firstName = Console.ReadLine();
         }
-        public void GetLastName()
+        public void SetLastName()
         {
             Console.WriteLine("What is your last name?");
-            LastName = Console.ReadLine();
+            lastName = Console.ReadLine();
         }
-        public void GetEmail()
+        public void SetEmail()
         {
             Console.WriteLine("What is you eMail address?");
-            EMailAddress = Console.ReadLine();
+            eMailAddress = Console.ReadLine();
         }
-        public void GetRegistrationNumber()
-        {
-            RegistrationNumber += 1;
-            Console.WriteLine("Your registration number is " + RegistrationNumber + ". Don't forget it!");
-        }
+
     }
 }
