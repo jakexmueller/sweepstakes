@@ -22,6 +22,50 @@ namespace sweepstakes
         }
 
         //Properties
+        public string FirstName
+        {
+            get
+            {
+                return firstName;
+            }
+            set
+            {
+                firstName = value;
+            }
+        }
+        public string LastName
+        {
+            get
+            {
+                return lastName;
+            }
+            set
+            {
+                lastName = value;
+            }
+        }
+        public string EMailAddress
+        {
+            get
+            {
+                return eMailAddress;
+            }
+            set
+            {
+                eMailAddress = value;
+            }
+        }
+        public int RegistrationNumber
+        {
+            get
+            {
+                return registrationNumber;
+            }
+            set
+            {
+                registrationNumber = value;
+            }
+        }
 
         //Member Methods
     }
