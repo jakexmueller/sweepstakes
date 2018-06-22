@@ -57,7 +57,9 @@ namespace sweepstakes
 
         public string PickWinner()
         {
-            int winner = random.Next(1, contestant.RegistrationNumber);
+            int winnerInteger = random.Next(1, RegistrationNumber);
+            string winnerString = winnerInteger.ToString();
+            return winnerString;
         }
 
         public void PrintContestantInfo(Contestant contestant)
