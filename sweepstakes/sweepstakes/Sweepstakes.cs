@@ -15,7 +15,7 @@ namespace sweepstakes
         int registrationNumber = 0;
 
         //Contructor
-        public Sweepstakes(string stringName)
+        public Sweepstakes()
         {
 
         }
@@ -55,15 +55,17 @@ namespace sweepstakes
             contestantDictionary.Add(RegistrationNumber, contestant);
         }
 
-        public string PickWinner()
+        public Contestant PickWinner()
         {
-            int winnerInteger = random.Next(1, RegistrationNumber);
-            string winnerString = winnerInteger.ToString();
-            return winnerString;
+            int winnerInteger = random.Next(1, (registrationNumber+1));
+            // winnerInteger finds key for winner
+            Contestant sweepstakesWinner = contestantDictionary[winnerInteger];
+            return sweepstakesWinner;
         }
 
         public void PrintContestantInfo(Contestant contestant)
         {
+            Console.WriteLine(contestant.FirstName + " " + contestant.LastName);
 
         }
 

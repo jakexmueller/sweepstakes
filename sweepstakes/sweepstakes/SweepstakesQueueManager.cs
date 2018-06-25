@@ -10,10 +10,14 @@ namespace sweepstakes
     {
 
         //Member Variables
+        
 
         Sweepstakes ISweepstakesManager.GetSweepstakes()
         {
-            throw new NotImplementedException();
+            Sweepstakes sweepstakes = new Sweepstakes();
+            Contestant winner = sweepstakes.PickWinner();
+            Convert.ChangeType(winner, typeof(Sweepstakes));
+            return winner;
         }
 
         void ISweepstakesManager.InsertSweepstakes(Sweepstakes sweepstakes)
@@ -24,5 +28,6 @@ namespace sweepstakes
         //Properties
 
         //Member Methods
+
     }
 }
